@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.Pagebar {
+    display: flex;
+    height: 2.4rem;
+    margin: .5rem -.5rem;
+    justify-content: flex-end ;
+    align-items:flex-start;
+    height: 4rem;
+    background-color: #f0f0f0;
+    width: 100%;
+  }
+  
+  .Logo-2 {
+    width: 4rem;
+    height: 3.2rem;
+    border-radius: 60%;
+    margin-top:  .5rem;
+    cursor: pointer;
+  }
+  
+.section-Header {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    line-height: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    transition :0.4s;
+    position: relative;
+    animation: myfirst 4s 1;
+    animation-direction: alternate;
+    z-index: 1;
+  }
+  
+  @keyframes myfirst {
+    0%   {background: white; left: -600px; top: 0px;font-size:1rem;}
+    25%  {background: transparent; left: -500px; top: 0px;font-size:1.5rem;}
+    50%  {background: transparent; left: -400px; top:0px;font-size:2rem;}
+    75%  {background: transparent; left: -300px; top: 0px;font-size:3rem;}
+    100% {background: transparent; left: -200px; top: 0px;font-size:3.8rem;}
+  }
+  
+.section-titel {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+    padding: 2rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    will-change: transform, opacity;
+    transition: 2s;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    width: 86%;
+    height: 26rem;
+    margin-left: 4rem;
+}
+
+.box-img {
+    width: 17.5rem;
+    height: 20rem;
+    margin: .3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.link-title {
+    text-align: center;
+    font-size: medium;
+    color: gray;
+    font-weight: 100;
+    width: 95%;
+    margin-top: 16rem;
+    height: 5rem;
+}
+
+.link-style {
+    text-decoration: none;
+    font-weight: 100;
+    color: gray;
+    cursor: pointer;
+}
+
+
+.navfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #1B2231;
+    width: 100%;
+    height: 8rem;
+    margin-top: -1rem;
+    /* margin-left: .5rem; */
+  }
+
+  .navfooter {
+    flex: 25%;
+ }
+ 
+ @media screen and (max-width: 992px) {
+   .navfooter {
+     flex: 50%;
+     margin-top:37rem ;
+   }
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .navfooter {
+     margin-top:116rem ;
+     width: 34rem;
+     height:15rem ;
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+ }
+  .icon-img {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem .5rem;
+    margin-top:  2rem;
+    /* margin-left:  4rem; */
+    background-color: white;
+    border-radius:50% ;
+  }
+
+  .icon-img {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem .5rem;
+    margin-top:  2rem;
+    /* margin-left:  4rem; */
+    background-color: white;
+    border-radius:50% ;
+  }
+    
+  .footertitel {
+    margin-top: -4rem;
+    margin-left:2.5rem ;
+   display: block;
+   font-size:small;
+   color: #f2952d;
+   text-align: center;
+   padding: 2rem;
+  }
+  
+  .footertite2 {
+    margin-top: -2rem;
+    margin-left: 2em;
+    display: block;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+
+.box-log{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 80%;
+    text-align: center;
+    margin-left: 35rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-continer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 5rem;
+    margin-left: 19rem;
+    margin-top:  -3rem;
+    background-color: #1B2231;
+}
+
+.navfooter a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #f2952d;
+    font-size:larger ;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 9rem;
+    padding: .5rem;
+}
+
+.box-title {
+    font-size: large;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    padding: .5rem .5rem;
+}
+
+.box-descrption {
+    font-size: medium;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    padding-left: .1rem;
+}
+
+.framContainer {
+    display: flex;
+}
+
+.framContainer .empty {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    /*js*/
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+.framImg  {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #333;
+    width: 80%;
+    position: fixed;
+    top: .3rem;
+    left: -100rem;
+    width: 99vw;
+    height: 99vh;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+.exitfram {
+    margin: 1.7rem;
+    text-align: right;
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+    user-select: none;
+}
+.exitfram :hover{
+    color: #f2952d;
+}
+.fram-box {
+      display: flex;
+}
+.div-img {
+    width:33rem;
+    height:32rem;
+    padding: 2rem;
+    margin-left: 25rem;
+    align-items: center;
+}
+.bread-header {
+    font-size: x-large;
+    font-weight: 510;
+    margin-left: -.6rem;
+    padding: 1rem;
+    color: darkblue;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 16.7rem;
+    /* letter-spacing: 0.1em; */
+  }
+
+   .bread-description {
+    font-size:.95rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left;
+    line-height: 1.1rem;
+    margin-left: -.2rem;
+    margin-top: .5rem;
+    padding: 1rem;
+    color: #0b0e14bd;
+    font-style: italic;
+  }
+  .​Bread-Box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -1rem;
+    margin-left: 6rem;
+    width: 40rem;
+    height: 31rem;
+    font-size: larger;
+    font-weight: 200;
+    text-align: left;
+    border-radius: 1rem;
+    background-color: white;
+    /* box-shadow: 1px 2px 10px #00000069 */
+  }
